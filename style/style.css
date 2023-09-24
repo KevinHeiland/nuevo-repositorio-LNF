@@ -65,6 +65,10 @@ header img {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.video-container iframe {
+    border: 1rem outset var(--fondo-logo);
+}
+
 
 /* Estilos para el contenedor del footer */
 .footer-grid-container {
@@ -79,6 +83,7 @@ header img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 6rem;
 }
 
 /* Estilos para los enlaces en el footer */
@@ -87,6 +92,7 @@ header img {
     margin-bottom: 1rem; /* Espacio entre los enlaces */
     text-decoration: none;
     color: var(--palabras-claras);
+    margin-top: 2rem;
 }
 
 /* Estilos para la imagen en el footer */
@@ -94,4 +100,5 @@ header img {
     max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
     height: auto; /* Mantiene la relación de aspecto original de la imagen */
     margin-bottom: 1rem; /* Espacio entre la imagen y los enlaces */
+
 }
