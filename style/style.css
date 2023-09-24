@@ -21,6 +21,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 10px;
+    height: 15vh;
 }
 
 header img {
@@ -54,6 +55,19 @@ header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#carouselMobile {
+    height: 85vh;
+}
+
+#carouselExampleAutoplaying {
+    height: 85vh;
+}
+
+#carouselMobile img {
+    width: 100%;
+    height: 100%;
 }
 
 #nosotros {
