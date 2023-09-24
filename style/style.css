@@ -84,7 +84,7 @@ header img {
 /*----------- CAJA ----------- */
 .caja { 
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    color: #ffffff; 
+    color: var(--palabras-claras); 
     font-size: 18px; 
     font-weight: 400; 
     text-align: center; 
@@ -151,8 +151,34 @@ header img {
     margin-bottom: 2rem;
 }
 
+.map-container {
+    margin-top: 4rem;
+    text-align: center;
+}
 
+.map-container h3 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: var(--palabras-claras); 
+}
 
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 768px){
+    .map-container iframe {
+        height: 15rem;
+    }
+}
+
+.embed-responsive::before {
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
 
 /* Estilos para el contenedor del footer */
 .footer-grid-container {
@@ -161,7 +187,8 @@ header img {
     left: 0;
     width: 100%;
     background-color: var(--fondo-logo); 
-    color: var(--palabras-claras);
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: var(--palabras-claras); 
     padding: 2rem;
     display: flex;
     flex-direction: column;
