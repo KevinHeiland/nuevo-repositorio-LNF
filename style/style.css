@@ -106,9 +106,23 @@ header img {
     padding-top: 5rem;
 }
 
+.productos-grid li {
+    margin-bottom: 5rem;
+    margin: 0,5rem;
+}
+
+.productos-grid ul {
+    justify-content: space-between;
+}
+
 .productos-list-grid a {
     text-decoration: none; 
     color: inherit; 
+}
+
+.productos-list-grid .card {
+    background-color: var(--color-fondo);
+    color: var(--palabras-claras);
 }
 
 .productos-list-grid img {
@@ -118,19 +132,12 @@ header img {
 
 @media (max-width:800px){
     .productos-list-grid img{
-        height: 10rem;
+        height: 11rem;
     }
 }
 
-.productos-list-grid h4,
-.productos-list-grid h6 {
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--palabras-claras);
-}
-
-.igual-ancho {
-    width: 100%;
+.productos-grid .ver-mas {
+    margin-top: 3rem;
 }
 
 .productos-grid .ver-mas a {
@@ -143,6 +150,8 @@ header img {
     padding: 1rem;
     margin-bottom: 2rem;
 }
+
+
 
 
 /* Estilos para el contenedor del footer */
