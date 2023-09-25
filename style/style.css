@@ -7,12 +7,13 @@
 body {
     background-color: var(--color-fondo);
     scroll-behavior: smooth;
-    min-height: 100vh;
     font-size: 62, 5%;
     /*para que un rem sea igual a 10px*/
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -67,8 +68,10 @@ header img {
 
 
 #nosotros {
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-bottom: 4rem;
+    text-align: center;
+    padding-left: 0px;
 }
 
 .empleados-list-grid li {
@@ -88,7 +91,7 @@ header img {
 }
 
 @media (max-width: 500px) {
-    .video {
+    .video source {
         height: 15rem;
     }
 }
@@ -205,7 +208,7 @@ header img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 
 /* Estilos para los enlaces en el footer */
@@ -221,5 +224,16 @@ header img {
     max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
     height: auto; /* Mantiene la relación de aspecto original de la imagen */
     margin-bottom: 1rem; /* Espacio entre la imagen y los enlaces */
+}
 
+       /*ESTILOS-SECCION-TRABAJOS */
+
+.grid-container p {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: var(--palabras-claras); 
+    font-weight: 400;
+}
+
+.grid-container .row {
+    padding: 0; 
 }
