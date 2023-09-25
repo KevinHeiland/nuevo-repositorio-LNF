@@ -83,13 +83,13 @@ header img {
 .video {
     border: 1rem outset var(--fondo-logo);
     width: 80%;
-    height: 25rem;
+    height: auto;
+    margin-bottom: 4rem;
 }
 
 @media (max-width: 500px) {
     .video {
         height: 15rem;
-        margin-bottom: 4rem;
     }
 }
 

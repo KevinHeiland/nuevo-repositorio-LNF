@@ -129,30 +129,16 @@
 
     <!--video and h2-->
     <section class="video-grid-container text-center align-items-center justify-content-center row">
-        <!-- Contenedor de video para pantallas grandes -->
-        <div class="video-container col-lg-6 d-none d-lg-block">
-            <iframe class="video" src="https://www.youtube.com/embed/cXMcQxENRPM?si=lZifpu8zbozpF78p&amp;autoplay=1"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+        <!-- Contenedor de video para pantallas grandes y pequeñas -->
+        <div class="video-container col-lg-6 col-12">
+            <video class="video" controls autoplay muted>
+                <source src="Imagenes/video-presentacion-LNF.mp4" type="video/mp4">
+                Tu navegador no admite la reproducción de video.
+            </video>
         </div>
 
-        <!-- Contenedor de texto para pantallas grandes -->
-        <div class="col-lg-6 d-none d-lg-block">
-            <div class="caja">-Veterinaria <br>-Electrificación rural <br>-Alimentos balanceados<br>-Semillas <br>
-                Artículos varios</div>
-        </div>
-
-        <!-- Contenedor de video para pantallas medianas y pequeñas -->
-        <div class="video-container col-12 d-lg-none">
-            <iframe class="video" src="https://www.youtube.com/embed/cXMcQxENRPM?si=lZifpu8zbozpF78p&amp;autoplay=1"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-
-        <!-- Contenedor de texto para pantallas medianas y pequeñas -->
-        <div class="col-12 d-lg-none">
+        <!-- Contenedor de texto para pantallas grandes y pequeñas -->
+        <div class="col-lg-6 col-12">
             <div class="caja">-Veterinaria <br>-Electrificación rural <br>-Alimentos balanceados<br>-Semillas <br>
                 Artículos varios</div>
         </div>
