@@ -13,34 +13,42 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
 
 header {
     background-color: var(--fondo-logo);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    max-height : 15vh;
-    margin-right: 0;
 }
 
-header img {
-    padding: 1rem;
-    width: 100%;
-    height: auto;
+.nav-bar-color {
+    background-color: var(--fondo-logo);
 }
 
+.dropdown {
+    background-color: var(--fondo-logo);
+}
 
-.navbar {
-    margin-left: 0;
-    display: flex;
-    align-items: center;
+.dropdown-menu {
+    background-color: var(--fondo-logo);
+}
+
+.dropdown-menu li a {
+    color: var(--palabras-claras);
 }
 
 .navbar-toggler-icon {
     color: var(--palabras-claras);
+}
+
+.navbar {
+    padding: 0;
+    border: 8px solid var(--fondo-logo);
 }
 
 .navbar-toggler{
@@ -48,7 +56,6 @@ header img {
     color: var(--palabras-claras);
     background-color: #ced1d544;
 }
-
 
 .navbar .navbar-nav .nav-link {
     color: var(--palabras-claras);
@@ -69,12 +76,15 @@ header img {
     max-height: 50rem;
 }
 
-
 #nosotros {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    text-align: center;
-    padding-left: 0px;
+}
+
+#nosotros h4 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: var(--fondo-logo); 
+    font-weight: 500;
 }
 
 .empleados-list-grid li {
