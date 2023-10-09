@@ -1,3 +1,22 @@
-body {
-    background-color: red($color: #000000);
-}
+//imports utilities 
+
+@import './utilities/var';
+
+//imports components
+
+@import './components/carousel';
+@import './components/body';
+@import './components/navbar';
+@import './components/footer';
+@import './components/nosotros';
+
+
+//imports globals
+
+@import './globals/reset';
+
+
+
+
+
+

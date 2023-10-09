@@ -1,0 +1,45 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+	.video {
+		source {
+			height: 15rem;
+		}
+	}
+}
+@media (max-width:800px) {
+	.productos-list-grid {
+		img {
+			height: 17rem;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.map-container {
+		iframe {
+			height: 15rem;
+		}
+	}
+}

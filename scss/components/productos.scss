@@ -1,0 +1,39 @@
+.productos-grid {
+	list-style: none;
+	background-color: $background-color_2;
+	padding-top: 5rem;
+	li {
+		margin-bottom: 5rem;
+		margin: 0,5rem;
+	}
+	ul {
+		justify-content: space-between;
+	}
+	.ver-mas {
+		margin-top: 3rem;
+		a {
+			margin-top: 10px;
+			font-family: $font-family_2;
+			color: $color_1;
+			background-color: $background-color_1;
+			text-decoration: none;
+			border: 3px solid var(--fondo-logo);
+			padding: 1rem;
+			margin-bottom: 2rem;
+		}
+	}
+}
+.productos-list-grid {
+	a {
+		text-decoration: none;
+		color: $color_3;
+	}
+	.card {
+		background-color: $background-color_1;
+		color: $color_1;
+	}
+	img {
+		width: 100%;
+		height: 20rem;
+	}
+}
