@@ -1,15 +1,15 @@
 //imports utilities 
-
 @import './utilities/var';
+@import './utilities/mixins';
 
 //imports components
-
-@import './components/carousel';
 @import './components/body';
-@import './components/navbar';
-@import './components/footer';
+@import './components/header';
+@import './components/carousel';
 @import './components/nosotros';
-
+@import './components/footer';
+@import './components/empleados';
+@import './components/productos';
 
 //imports globals
 

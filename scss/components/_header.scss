@@ -1,0 +1,35 @@
+header {
+	background-color: $fondo-logo;
+}
+.nav-bar-color {
+	background-color: $fondo-logo
+}
+.dropdown {
+	background-color: $fondo-logo;
+}
+.dropdown-menu {
+	background-color: $fondo-logo;
+	li {
+		a {
+			color: $palabras-claras;
+		}
+	}
+}
+.navbar-toggler-icon {
+	color: $palabras-claras;
+}
+.navbar {
+	padding: 0;
+	border: 8px solid var(--fondo-logo);
+
+	.navbar-nav {
+		.nav-link {
+			color: $palabras-claras;
+		}
+	}
+}
+.navbar-toggler {
+	border: var(--bs-border-width) solid $palabras-claras;
+	color: $palabras-claras;
+	background-color: $palabras-claras
+}

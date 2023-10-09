@@ -1,6 +1,6 @@
 .productos-grid {
 	list-style: none;
-	background-color: $background-color_2;
+	background-color: $fondo-logo;
 	padding-top: 5rem;
 	li {
 		margin-bottom: 5rem;
@@ -14,10 +14,10 @@
 		a {
 			margin-top: 10px;
 			font-family: $font-family_2;
-			color: $color_1;
-			background-color: $background-color_1;
+			color: $palabras-claras;
+			background-color: $fondo;
 			text-decoration: none;
-			border: 3px solid var(--fondo-logo);
+			border: 3px solid $fondo-logo;
 			padding: 1rem;
 			margin-bottom: 2rem;
 		}
@@ -26,11 +26,11 @@
 .productos-list-grid {
 	a {
 		text-decoration: none;
-		color: $color_3;
+		color: $palabras-claras;
 	}
 	.card {
-		background-color: $background-color_1;
-		color: $color_1;
+		background-color: $fondo;
+		color: $palabras-claras;
 	}
 	img {
 		width: 100%;
