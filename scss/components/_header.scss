@@ -25,6 +25,13 @@ header {
 			font-size: 1.7rem;
 			font-weight: 500;
 		}
+		.nav-item:hover {
+			transform: scale(1.1); 
+			transition: transform 0.5s ease;
+		}
+		.nav-item {
+			padding-right: 1rem;
+		}
 	}
 	button {
 		background-color: $palabras-claras;
@@ -32,4 +39,15 @@ header {
 	.collapse {
 		z-index: 2;
 	}
+	@media (max-width: 580px){
+		.navbar-brand {
+			width: 85%;
+		}
+	}
+	@media (max-width: 334px){
+		.navbar-brand {
+			width: 82%;
+		}
+	}
+
 }

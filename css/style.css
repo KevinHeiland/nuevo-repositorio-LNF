@@ -35,11 +35,28 @@ header {
   font-size: 1.7rem;
   font-weight: 500;
 }
+.navbar .navbar-nav .nav-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+.navbar .navbar-nav .nav-item {
+  padding-right: 1rem;
+}
 .navbar button {
   background-color: #ced1d5;
 }
 .navbar .collapse {
   z-index: 2;
+}
+@media (max-width: 580px) {
+  .navbar .navbar-brand {
+    width: 85%;
+  }
+}
+@media (max-width: 334px) {
+  .navbar .navbar-brand {
+    width: 82%;
+  }
 }
 
 .carousel .carousel-item img {
@@ -203,9 +220,6 @@ header {
 .productos-grid li {
   margin-bottom: 5rem;
 }
-.productos-grid ul {
-  justify-content: space-between;
-}
 .productos-grid .ver-mas {
   padding-bottom: 3rem;
 }
@@ -264,12 +278,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .map-container iframe {
-    height: 15rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
