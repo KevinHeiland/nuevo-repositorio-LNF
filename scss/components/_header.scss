@@ -1,35 +1,35 @@
 header {
 	background-color: $fondo-logo;
+	height: 15vh;
+	align-items: center;
 }
-.nav-bar-color {
-	background-color: $fondo-logo
-}
-.dropdown {
-	background-color: $fondo-logo;
-}
-.dropdown-menu {
-	background-color: $fondo-logo;
-	li {
-		a {
-			color: $palabras-claras;
-		}
-	}
-}
-.navbar-toggler-icon {
-	color: $palabras-claras;
-}
-.navbar {
-	padding: 0;
-	border: 8px solid var(--fondo-logo);
 
+.navbar {
+	z-index: 1;
+	height: 100%;
+	.container-fluid {
+		background-color: $fondo-logo;	
+	}
+	.navbar-toggler-icon {
+		color: $palabras-claras;
+	}
+	#navbarNav {
+		background-color: $fondo-logo;
+		font-family: $font-family_1;
+	}
 	.navbar-nav {
-		.nav-link {
+		a { 
 			color: $palabras-claras;
 		}
+		.nav-link {
+			font-size: 1.7rem;
+			font-weight: 500;
+		}
 	}
-}
-.navbar-toggler {
-	border: var(--bs-border-width) solid $palabras-claras;
-	color: $palabras-claras;
-	background-color: $palabras-claras
+	button {
+		background-color: $palabras-claras;
+	}
+	.collapse {
+		z-index: 2;
+	}
 }

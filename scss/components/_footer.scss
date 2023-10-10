@@ -1,7 +1,7 @@
 .footer-grid-container {
 	display: block;
 	bottom: 0;
-	width: 100% !important;
+	width: 100%;
 	background-color: $fondo-logo;
 	font-family: $font-family_1;
 	color: $palabras-claras;
@@ -20,7 +20,6 @@
 		color: $palabras-claras;
 	}
 	img {
-		max-width: 100%;
 		height: auto;
 		margin-bottom: 1rem;
 	}

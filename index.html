@@ -16,31 +16,26 @@
 <body>
     <!--Header-->
     <header class="col-xs-12 container-fluid">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid nav-bar-color">
-                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="Imagenes/logo-lnf.PNG" alt="logoLNF"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="Imagenes/logo-lnf.PNG" alt="logo-lnf"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Secciones
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pages/Productos.html">Productos</a></li>
-                                <li><a class="dropdown-item" href="pages/Trabajos.html">Trabajos</a></li>
-                            </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/Productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#footer">Contactos</a>
+                            <a class="nav-link" href="pages/Trabajos.html">Trabajos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contactos</a>
                         </li>
                     </ul>
                 </div>
@@ -50,35 +45,31 @@
 
 
     <!--Carousel-->
-    <section class="imgs-grid-containter container-fluid d-none d-lg-block d-md-block">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="Imagenes/vacas.jpg" class="d-block w-100" alt="hacienda">
-                </div>
-                <div class="carousel-item">
-                    <img src="Imagenes/trigo.jpg" class="d-block w-100" alt="trigo">
-                </div>
-                <div class="carousel-item">
-                    <img src="Imagenes/patrio3.jpg" class="d-block w-100" alt="patio">
-                </div>
+    <div id="carouselExample" class="carousel slide d-none d-lg-block d-md-block">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Imagenes/trigo.jpg" class="d-block w-100 img-fluid" alt="img1">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <img src="Imagenes/vacas.jpg" class="d-block w-100 img-fluid" alt="img2">
+            </div>
+            <div class="carousel-item">
+                <img src="Imagenes/patrio3.jpg" class="d-block w-100 img-fluid" alt="img3">
+            </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <!--Carrousel-end-->
 
     <!-- Carrusel para pantallas móviles -->
-    <section class="imgs-grid-container container-fluid d-block d-lg-none d-md-none">
+    <section class="container-fluid d-block d-lg-none d-md-none">
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -105,25 +96,25 @@
 
 
     <!--seccion de nosotros-->
-    <section id="nosotros" class="text-center container-fluid">
+    <section id="nosotros" class="text-center align-items-center container-fluid row">
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <img src="Imagenes/generica.png" alt="empleado1" class="mx-auto img-fluid">
-            <h4 class="mt-2">Pablo Heiland</h4>
+            <h4 class="mt-2 tracking-in-expand">Pablo Heiland</h4>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-4">
             <img src="Imagenes/generica.png" alt="empleado2" class="mx-auto img-fluid">
-            <h4 class="mt-2">Eduardo Heiland</h4>
+            <h4 class="mt-2 tracking-in-expand">Eduardo Heiland</h4>
         </div>
         <div class="col-12 col-lg-4 mb-4">
             <img src="Imagenes/generica.png" alt="empleado3" class="mx-auto img-fluid">
-            <h4 class="mt-2">Marcos Caracino</h4>
+            <h4 class="mt-2 tracking-in-expand">Marcos Caracino</h4>
         </div>
     </section>
     <!--fin seccion nosotros-->
 
 
     <!--video and h2-->
-    <section class="video-grid-container container-fluid row">
+    <section class="video-grid-container container-fluid row align-items-center text-center">
         <!-- Contenedor de video para pantallas grandes y pequeñas -->
         <div class="video-container col-lg-6 col-12">
             <video class="video" controls autoplay muted>
@@ -195,9 +186,9 @@
             <h3>Nos podés encontrar en:</h3>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1559.9738146861537!2d-58.7382489!3d-38.5580204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958f97bf1fdbcc1f%3A0x8acf53f54bd02157!2sLa%20Nueva%20Fusta!5e0!3m2!1ses-419!2sar!4v1695587436420!5m2!1ses-419!2sar"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1559.9738146861537!2d-58.7382489!3d-38.5580204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958f97bf1fdbcc1f%3A0x8acf53f54bd02157!2sLa%20Nueva%20Fusta!5e0!3m2!1ses-419!2sar!4v1695587436420!5m2!1ses-419!2sar"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
