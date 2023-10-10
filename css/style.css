@@ -47,7 +47,7 @@ header {
 }
 
 #nosotros {
-  padding-top: 6rem;
+  padding-top: 15rem;
   padding-bottom: 4rem;
 }
 #nosotros h4 {
@@ -60,8 +60,7 @@ header {
   font-size: 2rem;
 }
 #nosotros img {
-  padding-top: 2rem;
-  width: 35rem;
+  width: 23rem;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -96,43 +95,57 @@ header {
   }
 }
 .footer-grid-container {
-  display: block;
   bottom: 0;
   width: 100%;
   background-color: #1e2834;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   color: #ced1d5;
   padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 1rem;
+}
+.footer-grid-container .logo img {
+  width: 35%;
+  height: auto;
+}
+@media (max-width: 1200px) {
+  .footer-grid-container .logo img {
+    width: 60%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .footer-grid-container .logo img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.footer-grid a {
-  display: block;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  color: #ced1d5;
-}
 .footer-grid img {
   height: auto;
   margin-bottom: 1rem;
 }
+.footer-grid .row a {
+  color: #ced1d5;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer-grid .row .icon-imgs {
+  height: 3rem;
+  width: auto;
+}
 
 .video-container {
-  padding-bottom: 4rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
-
-.video {
-  border: 1rem outset #1e2834;
-  width: 80%;
+.video-container video {
+  width: 75%;
   height: auto;
-  margin-bottom: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-
-.caja {
+.video-container .caja {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   color: #ced1d5;
   font-size: 18px;
@@ -149,36 +162,74 @@ header {
   max-width: 60%;
   margin: 0 auto;
 }
+.video-container .col-12 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+}
+.map-container {
+  width: 70%;
+  padding-top: 3rem;
+}
+.map-container h3 {
+  text-align: center;
+  color: #1e2834;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #1e2834 0px 0px 0px 3px;
+}
+.map-container .map {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.map-container .map iframe {
+  width: 100%;
+}
 
 .productos-grid {
-  list-style: none;
+  width: 100%;
   background-color: #1e2834;
   padding-top: 5rem;
 }
 .productos-grid li {
   margin-bottom: 5rem;
-  margin: 0, 5rem;
 }
 .productos-grid ul {
   justify-content: space-between;
 }
 .productos-grid .ver-mas {
-  margin-top: 3rem;
+  padding-bottom: 3rem;
 }
-.productos-grid .ver-mas a {
-  margin-top: 10px;
+.productos-grid .ver-mas .btn {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.productos-grid .ver-mas .btn a {
   font-family: Arial, Helvetica, sans-serif;
   color: #ced1d5;
-  background-color: #808080;
-  text-decoration: none;
-  border: 3px solid #1e2834;
-  padding: 1rem;
-  margin-bottom: 2rem;
+  font-size: 20px;
 }
 
 .productos-list-grid a {
-  text-decoration: none;
   color: #ced1d5;
+}
+.productos-list-grid a p {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 1.5rem;
+  color: red;
+}
+.productos-list-grid a h4 {
+  font-size: 1.7rem;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 600;
 }
 .productos-list-grid .card {
   background-color: #808080;
@@ -188,12 +239,15 @@ header {
   width: 100%;
   height: 20rem;
 }
+.productos-list-grid .card:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 html {
@@ -212,16 +266,6 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 500px) {
-  .video source {
-    height: 15rem;
-  }
-}
-@media (max-width: 800px) {
-  .productos-list-grid img {
-    height: 17rem;
-  }
-}
 @media (max-width: 768px) {
   .map-container iframe {
     height: 15rem;

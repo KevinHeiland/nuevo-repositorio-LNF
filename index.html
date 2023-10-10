@@ -114,17 +114,16 @@
 
 
     <!--video and h2-->
-    <section class="video-grid-container container-fluid row align-items-center text-center">
+    <section class="video-container container-fluid row align-items-center text-center">
         <!-- Contenedor de video para pantallas grandes y pequeñas -->
-        <div class="video-container col-lg-6 col-12">
-            <video class="video" controls autoplay muted>
-                <source src="Imagenes/video-presentacion-LNF.mp4" type="video/mp4">
-                Tu navegador no admite la reproducción de video.
+        <div class="col-12 col-lg-6">
+            <video controls autoplay muted>
+                <source class="vid" src="Imagenes/video-presentacion-LNF.mp4" type="video/mp4">
+                    Tu navegador no admite la reproducción de video.
             </video>
         </div>
-
         <!-- Contenedor de texto para pantallas grandes y pequeñas -->
-        <div class="col-lg-6 col-12">
+        <div class="caja-container col-12 col-lg-6">
             <div class="caja">-Veterinaria <br>-Electrificación rural <br>-Alimentos balanceados<br>-Semillas <br>
                 Artículos varios</div>
         </div>
@@ -133,16 +132,15 @@
 
 
     <!-- Sección de productos -->
-    <section class="productos-grid row">
-        <ul class="productos-list-grid row justify-content-center">
+    <section class="productos-grid container-fluid row">
+        <ul class="productos-list-grid row justify-content-center align-items-center">
             <li class="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="Imagenes/caravana.jpeg" class="card-img-top" alt="producto1">
                     <div class="card-body text-center">
                         <a href="pages/Productos.html">
                             <p class="card-text">
-                                <h4>Nombre del producto</h4>Some quick example text to build on the card title and make
-                                up the bulk of the card's content.
+                                <h4>Caravanas Alflex</h4>Caravanas marca Allflex en distintos colores a elección las cuales viene en paquetes de 25 unidades, pueden ser enumeras o no según se desee.
                             </p>
                         </a>
                     </div>
@@ -154,8 +152,7 @@
                     <div class="card-body text-center">
                         <a href="pages/Productos.html">
                             <p class="card-text">
-                                <h4>Nombre del producto</h4>Some quick example text to build on the card title and make
-                                up the bulk of the card's content.
+                                <h4>Semillas de cesped</h4>Semillas de cesped marca Guash, las cuaes vienen en paquetes de kilo o de 5 kilos, estos pueden ser cesped parar mediasombra o resistente a pisoteo.
                             </p>
                         </a>
                     </div>
@@ -167,8 +164,7 @@
                     <div class="card-body text-center">
                         <a href="pages/Productos.html">
                             <p class="card-text">
-                                <h4>Nombre del producto</h4>Some quick example text to build on the card title and make
-                                up the bulk of the card's content.
+                                <h4>Pastillas de cloro</h4>Pastillas de cloro marca Denward para todas las estaciones. Se cuenta ton envases de kilo o de 500gr, los cuales pueden ser de triple acción, multifunción o para invierno. 
                             </p>
                         </a>
                     </div>
@@ -176,32 +172,35 @@
             </li>
         </ul>
         <div class="ver-mas col-12 text-center">
-            <a href="pages/Productos.html">Ver más...</a>
+            <button type="button" class="btn btn-secondary btn-lg"><a href="pages/Productos.html">Ver más</a></button>
         </div>
     </section>
     <!-- Fin de la sección de productos -->
 
-    <section class="map-container container-fluid">
-        <div class="justify-content-center">
+    <section class="map-container container-fluid justify-content-center align-items-center">
             <h3>Nos podés encontrar en:</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1559.9738146861537!2d-58.7382489!3d-38.5580204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958f97bf1fdbcc1f%3A0x8acf53f54bd02157!2sLa%20Nueva%20Fusta!5e0!3m2!1ses-419!2sar!4v1695587436420!5m2!1ses-419!2sar"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1559.9738146861537!2d-58.7382489!3d-38.5580204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958f97bf1fdbcc1f%3A0x8acf53f54bd02157!2sLa%20Nueva%20Fusta!5e0!3m2!1ses-419!2sar!4v1696966666267!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
     </section>
 
 
     <!--footer-->
-    <footer class="footer-grid-container row  container-fluid" id="footer">
+    <footer class="footer-grid-container col-12 container-fluid" id="footer">
         <div class="footer-grid  mb-4">
-            <a href="https://goo.gl/maps/GFexwPzgUWaese9X8">Dirección: Calle 50-2966 Necochea</a><br>
-            <a href="https://www.instagram.com/lanuevafusta/">Instagram: @LaNuevaFusta</a><br>
-            <a href="tel:+54902262435544">Teléfono: +549(2262)43-5544</a>
+            <div class="row">
+                <a href="https://goo.gl/maps/GFexwPzgUWaese9X8"><img class="icon-imgs" src="Imagenes/ubicacion-icon.png" alt="ubicacion-icon"> Calle 50-2966 Necochea</a><br>
+            </div>
+            <div class="row">
+                <a href="https://www.instagram.com/lanuevafusta/"><img class="icon-imgs" src="Imagenes/logo-instagram.png" alt="logo-instagram">@LaNuevaFusta</a><br>
+            </div>
+            <div class="row">
+                <a href="tel:+54902262435544"><img class="icon-imgs" src="Imagenes/phone-icon.png" alt="phone-icon"> +549(2262)43-5544</a>
+            </div>
         </div>
-        <a href="index.html"><img class=" mb-4 img-fluid" src="Imagenes/logo-lnf.PNG" alt="logo img"></a>
+        <div class="logo">
+            <a href="index.html"><img class=" mb-4 img-fluid" src="Imagenes/logo-lnf.PNG" alt="logo img"></a>
+        </div>
     </footer>
     <!--end footer-->
 
