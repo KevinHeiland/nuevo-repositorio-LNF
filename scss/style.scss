@@ -1,0 +1,27 @@
+//imports utilities 
+@import './utilities/var';
+@import './utilities/mixins';
+
+//imports components
+@import './components/body';
+@import './components/header';
+@import './components/carousel';
+@import './components/nosotros';
+@import './components/footer';
+@import './components/videotxt';
+@import './components/map';
+@import './components/productos';
+
+//imports pages style
+
+@import './pages-style/trabajos';
+
+//imports globals
+
+@import './globals/reset';
+
+
+
+
+
+

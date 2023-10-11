@@ -1,0 +1,26 @@
+#nosotros {
+	padding-top: 15rem;
+	padding-bottom: 4rem;
+
+	h4 {
+		animation-delay: 5s;
+		animation-iteration-count: 1;
+		padding-top: 2rem;
+		font-family: $font-family_1;
+		color: $fondo-logo;
+		font-weight: 600;
+		font-size: 2rem;
+	}
+
+	img {
+		width: 23rem;
+		height: auto;
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	}
+}
+
+.tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+
+
+
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}} 
