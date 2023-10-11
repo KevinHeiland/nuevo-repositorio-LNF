@@ -1,6 +1,9 @@
 .map-container {
     width: 70%;
     padding-top: 3rem;
+    .texto-map {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, $fondo-logo 0px 0px 0px 3px;
+    }
     h3 {
         text-align: center;
         color: $fondo-logo;
@@ -9,7 +12,6 @@
         font-size: 2.5rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, $fondo-logo 0px 0px 0px 3px;
     }
     .map {
         text-align: center;
