@@ -1,12 +1,12 @@
 .productos-grid {
-	width: 100%;
+	width: 100% !important;
 	background-color: $fondo-logo;
 	padding-top: 5rem;
 	li {
 		margin-bottom: 5rem;
 	}
 	.ver-mas {
-		padding-bottom: 3rem;
+		margin-bottom: 3rem;
 		.btn {
 			box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 			a {	
@@ -16,6 +16,12 @@
 			}
 		}
 	}
+	.row {
+		padding-right: 0px;
+		padding-bottom: 0px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
 }
 .productos-list-grid {
 	a {
@@ -23,7 +29,6 @@
 		p {
 			font-family: $font-family_1;
 			font-size: 1.5rem;
-			color: red;
 		}
 		h4 {
 			font-size: 1.7rem;

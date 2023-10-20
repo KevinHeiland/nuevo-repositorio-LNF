@@ -194,15 +194,12 @@ header {
   width: 70%;
   padding-top: 3rem;
 }
-.map-container .texto-map {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #1e2834 0px 0px 0px 3px;
-}
 .map-container h3 {
   text-align: center;
   color: #1e2834;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-weight: 1000;
+  font-size: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -213,9 +210,14 @@ header {
 .map-container .map iframe {
   width: 100%;
 }
+@media (max-width: 767px) {
+  .map-container h3 {
+    font-size: 3rem;
+  }
+}
 
 .productos-grid {
-  width: 100%;
+  width: 100% !important;
   background-color: #1e2834;
   padding-top: 5rem;
 }
@@ -223,7 +225,7 @@ header {
   margin-bottom: 5rem;
 }
 .productos-grid .ver-mas {
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 .productos-grid .ver-mas .btn {
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -233,6 +235,12 @@ header {
   color: #ced1d5;
   font-size: 20px;
 }
+.productos-grid .row {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 
 .productos-list-grid a {
   color: #ced1d5;
@@ -240,7 +248,6 @@ header {
 .productos-list-grid a p {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   font-size: 1.5rem;
-  color: red;
 }
 .productos-list-grid a h4 {
   font-size: 1.7rem;
@@ -261,7 +268,7 @@ header {
 }
 
 .grid-container {
-  width: 90%;
+  width: 70%;
 }
 .grid-container .product-img img {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
