@@ -1,0 +1,11 @@
+@mixin palabras ($argumento1, $argumento2, $argumento3, $argumento4){
+    color: $argumento1;
+    font-family: $argumento1;
+    font-size: $argumento3;
+    font-weight: $argumento4;
+}
+
+@mixin Img-card () {
+    width: 100%;
+    height: 15rem;
+}
